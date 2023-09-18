@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/incluir.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <title>Sistema Acadêmico</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/SistemaAcademico-web/index.html">
+        <img src="https://i0.wp.com/2016.saopaulo.wordcamp.org/files/2016/10/unicid_pref_pos.png?fit=1000%2C373&ssl=1"
+          width="200">
+      </a>
+      <a class="nav-link navbar-brand" href="/SistemaAcademico-web/index.html">Home</a>
+      <a class="nav-link navbar-brand" href="/SistemaAcademico-web/html/incluir.html">Incluir</a>
+      <a class="nav-link navbar-brand" href="../ServletAluno?cmd=listar">Listar</a>
+    </div>
+    </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="col-12 text-center">
+      <form class="row g-3" action="../ServletAluno" method="get">
+        <input type="hidden" name="cmd" value="incluir">
+        <div class="col-md-6">
+          <label for="inputRa" class="form-label">RA:</label>
+          <input type="text" name="txtRa" size="60" class="form-control" placeholder="Digite seu RA">
+        </div>
+        <div class="col-md-6">
+          <label for="inputNome" class="form-label">Nome:</label>
+          <input type="text" name="txtNome" size="60" class="form-control" placeholder="Digite seu Nome">
+        </div>
+        <div class="col-12">
+          <label for="inputEndereco" class="form-label">Endereço:</label>
+          <input input type="text" size="60" name="txtEndereco" class="form-control" placeholder="Digite seu Endereço">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">E-mail:</label>
+          <input type="email" size="60" name="txtEmail" class="form-control" placeholder="Digite seu E-mail">
+          <div class="col-lg-6">
+            <label for="inputPeriodo" class="form-label">Período</label>
+            <select size="1" name="cmbPeriodo" class="form-select">
+              <option selected>Escolha...</option>
+              <option>Manhã</option>
+              <option>Tarde</option>
+              <option>Noite</option>
+            </select>
+          </div>
+          <div class="col-lg-6">
+            <label for="inputData" class="form-label">Data de Nascimento:</label>
+            <input type="date" size="10" name="txtData" />
+          </div>
+          <div class="col-12">
+            <input type="submit" value="Enviar">
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+
+
+
+
+
+
+    <!--	<form action="../ServletAluno" method="get">-->
+    <!--		<table border="1">-->
+
+    <!--			<input type="hidden" name="cmd" value="incluir">-->
+    <!--			<tr><th colspan="2"><h1>Cadastro de Alunos</h1></th></tr>-->
+    <!--			<tr>-->
+    <!--				<td>RA:</td>-->
+    <!--				<td><input type="text" name="txtRa" size="60" /></td>-->
+    <!--			</tr>-->
+    <!--			<tr>-->
+    <!--				<td>Nome:</td>-->
+    <!--				<td><input type="text" name="txtNome" size="60" /></td>-->
+    <!--			</tr>-->
+    <!--			<tr>-->
+    <!--				<td>E-mail:</td>-->
+    <!--				<td><input type="email" size="60" name="txtEmail" /></td>-->
+    <!--			</tr>-->
+    <!--			<tr>-->
+    <!--				<td>Endereço:</td>-->
+    <!--				<td><input type="text" size="60" name="txtEndereco" /></td>-->
+    <!--			</tr>-->
+    <!--			<tr>-->
+    <!--				<td>Data de Nascimento:</td>-->
+    <!--				<td><input type="date" size="10" name="txtData" /></td>-->
+    <!--			</tr>-->
+    <!--			<tr>-->
+    <!--				<td>Período</td>-->
+    <!--				<td><select size="1" name="cmbPeriodo">-->
+    <!--						<option>Manhã</option>-->
+    <!--						<option>Tarde</option>-->
+    <!--						<option>Noite</option>-->
+    <!--				</select></td>-->
+    <!--			</tr>-->
+    <!--			<tr>-->
+    <!--				<td colspan="2" align="center"><input type="submit" value="Enviar"></td>-->
+    <!--			</tr>-->
+    <!--		</table>-->
+    <!--	</form>-->
+</body>
+
+</html>
